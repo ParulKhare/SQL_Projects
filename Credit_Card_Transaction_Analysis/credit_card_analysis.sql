@@ -1,4 +1,4 @@
--- 1- write a query to print top 5 cities with highest spends and their percentage contribution of total credit card spends 
+/* 1- write a query to print top 5 cities with highest spends and their percentage contribution of total credit card spends */
 
 with city_amount as (
 select city, sum(amount) as total_spent_city 
@@ -18,7 +18,7 @@ on 1=1
 order by total_spent_city desc
 limit 5 ;
 
--- 2- write a query to print highest spend month and amount spent in that month for each card type
+/* 2- write a query to print highest spend month and amount spent in that month for each card type */
 
 with total_spent as (
 select card_type, left(str_to_date(transaction_date, '%Y-%m-%d'), 7) as year_mon, sum(amount) as total_spent
@@ -59,7 +59,7 @@ from amount_1000000
 ) sub
 where rwn = 1 ;
 
--- 4- write a query to find city which had lowest percentage spend for gold card type
+/* 4- write a query to find city which had lowest percentage spend for gold card type  */
 
 with cte1 as (
 select city, sum(amount) as gold_amount
@@ -104,7 +104,7 @@ where highest = 1 or lowest = 1
 group by city 
 order by city ;
 
--- 6- write a query to find percentage contribution of spends by females for each expense type
+/* 6- write a query to find percentage contribution of spends by females for each expense type  */
 
 with female_exp_amount as (
 select exp_type, sum(amount) as amount
@@ -125,7 +125,7 @@ join total_amount t
 on f.exp_type = t.exp_type
 order by percent_contribution desc ;
 
--- 7- which card and expense type combination saw highest month over month growth in Jan-2014
+/* 7- which card and expense type combination saw highest month over month growth in Jan-2014  */
 
 with card_exp_amount as (
 select card_type, exp_type
@@ -150,7 +150,7 @@ select * from month_growth
 order by mom_growth desc
 limit 1 ;
 
--- 8- during weekends which city has highest total spend to total no of transcations ratio 
+/* 8- during weekends which city has highest total spend to total no of transcations ratio  */
 
 select city, round(sum(amount)/count(*), 2) as spend_transaction_ratio
 from testdb1.credit_card_transcations
@@ -159,7 +159,7 @@ group by city
 order by spend_transaction_ratio desc
 limit 1 ;
 
--- 9 - which city took least number of days to reach its 500th transaction after the first transaction in that city
+/* 9 - which city took least number of days to reach its 500th transaction after the first transaction in that city  */
 
 with min_transaction as (
 select city, min(transaction_date) as min_transaction_date
@@ -180,4 +180,3 @@ on t.city = m.city
 where rwn = 500
 order by date_diff
 limit 1 ;
-

@@ -1,4 +1,4 @@
-/* 1- write a query to print top 5 cities with highest spends and their percentage contribution of total credit card spends */
+# /* 1- write a query to print top 5 cities with highest spends and their percentage contribution of total credit card spends */
 
 with city_amount as (
 select city, sum(amount) as total_spent_city 

@@ -31,12 +31,17 @@ This dataset contains credit card transaction records across multiple Indian cit
 8. Weekend spending behavior
 9. 500th transaction analysis
 
-## SQL Skills Used
+## SQL Skills Demonstrated
 
 - CTEs
 - Window Functions
 - ROW_NUMBER()
+- DENSE_RANK()
+- SUM() OVER()
 - LAG()
 - Aggregate Functions
 - Date Functions
-- Conditional Aggregation
+- Joins
+- Subqueries
+- Ranking Analysis
+- Business KPI Analysis

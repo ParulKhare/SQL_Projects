@@ -181,4 +181,3 @@ where rwn = 500
 order by date_diff
 limit 1 ;
 
-

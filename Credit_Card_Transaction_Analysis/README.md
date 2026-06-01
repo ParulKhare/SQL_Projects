@@ -3,6 +3,22 @@
 ## Overview
 Analyzed credit card transaction data using MySQL to solve business and analytical problems.
 
+## Dataset Overview
+
+This dataset contains credit card transaction records across multiple Indian cities and includes information about transaction dates, card types, expense categories, customer demographics, and transaction amounts.
+
+### Columns
+
+| Column | Description |
+|----------|-------------|
+| transaction_id | Unique identifier for each transaction |
+| city | City where transaction occurred |
+| transaction_date | Date of transaction |
+| card_type | Credit card type (Gold, Silver, Platinum, Signature) |
+| exp_type | Expense category (Bills, Fuel, Grocery, Entertainment, etc.) |
+| gender | Customer gender |
+| amount | Transaction amount |
+
 ## Questions Solved
 
 1. Top 5 cities by spend

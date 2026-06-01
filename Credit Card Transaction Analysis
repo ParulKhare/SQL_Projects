@@ -1,1 +1,44 @@
 
+# Credit Card Transaction Analysis
+
+## Project Overview
+
+This project analyzes credit card transaction data using SQL to solve business and analytical problems commonly encountered in data analyst and business intelligence roles.
+
+## Business Questions Answered
+
+1. Top 5 cities with highest spend and percentage contribution.
+2. Highest spending month for each card type.
+3. Transaction where cumulative spend crossed 1,000,000 for each card type.
+4. City with the lowest Gold card spend percentage.
+5. Highest and lowest expense type for each city.
+6. Percentage contribution of female spending by expense type.
+7. Card and expense type combination with highest month-over-month growth.
+8. City with highest weekend spend-per-transaction ratio.
+9. City that reached its 500th transaction in the fewest days.
+
+## SQL Concepts Used
+
+- Common Table Expressions (CTEs)
+- Window Functions
+  - ROW_NUMBER()
+  - LAG()
+- Aggregate Functions
+- Conditional Aggregation
+- Date Functions
+- Ranking Techniques
+- Business KPI Analysis
+
+## Tools
+
+- MySQL
+- GitHub
+
+## Key Skills Demonstrated
+
+- Data Analysis
+- Business Problem Solving
+- Query Optimization
+- Analytical Thinking
+- SQL Reporting
+- KPI Development

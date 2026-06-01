@@ -11,7 +11,7 @@ select sum(amount) as total_amount
 from testdb1.credit_card_transcations
 )
 
-select city, total_spent_city as total_spend, round((total_spent_city*1.00/total_amount) * 100, 2) as percent_contribution
+select city, total_spent_city as total_spend, round((total_spent_city * 1.0 /total_amount) * 100, 2) as percent_contribution
 from city_amount
 join total_amount
 on 1=1
